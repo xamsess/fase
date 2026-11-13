@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · FASE Vision Lab</title>
+<meta name="description" content="Politique de confidentialité de FASE Vision Lab.">
+<link rel="icon" href="../assets/vision-lab-icon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="../en/vision-lab/privacy.html">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+<header class="top"><div class="wrap">
+  <a class="brand" href="../"><img src="../assets/fase-mark.svg" alt="" width="26" height="26">FASE</a>
+  <nav class="nav" aria-label="Navigation principale">
+    <a href="../">Accueil</a>
+    <a href="./">Vision Lab</a>
+    <a href="confidentialite.html" aria-current="page">Confidentialité</a>
+    <a class="lang" href="../en/vision-lab/privacy.html" hreflang="en" lang="en">EN</a>
+  </nav>
+</div></header>
+
+<main class="wrap" id="contenu"><article class="doc">
+  <h1>Politique de confidentialité — FASE Vision Lab</h1>
+  <p class="updated">Dernière mise à jour : 13 novembre 2026.</p>
+
+  <h2>1. En bref</h2>
+  <ul>
+    <li>FASE Vision Lab est une application de bureau pour Windows. Elle n'a <b>ni compte utilisateur, ni serveur, ni mesure d'audience</b>, et n'envoie aucune donnée d'utilisation à l'éditeur.</li>
+    <li>Vos projets, images, notes et réglages sont enregistrés <b>sur votre ordinateur</b>. L'éditeur n'y a pas accès.</li>
+    <li>Lorsque vous utilisez <b>volontairement</b> un service externe (fournisseur d'IA, banque d'images, Pinterest), Vision Lab lui envoie les données nécessaires à la fonction utilisée. Ce service les traite selon sa propre politique de confidentialité.</li>
+  </ul>
+
+  <h2>2. Responsable et contact</h2>
+  <p>FASE Vision Lab est un projet personnel et non commercial, développé par un particulier (voir les <a href="../mentions-legales.html">mentions légales</a>). Pour toute question relative à vos données : <a href="mailto:fasecreativesuite@gmail.com">fasecreativesuite@gmail.com</a>.</p>
+
+  <h2>3. Ce qui reste sur votre ordinateur</h2>
+  <table>
+    <tr><th>Données</th><th>Usage</th></tr>
+    <tr><td>Projets : images que vous importez, notes, liens, pistes créatives, décisions, historique de vos demandes</td><td>Faire fonctionner vos projets</td></tr>
+    <tr><td>Réglages et préférences</td><td>Conserver vos choix</td></tr>
+    <tr><td>Clés d'API et jetons d'accès des services que vous connectez, <b>chiffrés par Windows</b> et liés à votre compte Windows</td><td>Vous connecter aux services choisis</td></tr>
+  </table>
+  <p>Ces données restent sous votre contrôle : vous pouvez les supprimer à tout moment. La désinstallation ne supprime pas vos projets. Si d'autres applications FASE sont installées, elles peuvent échanger des références avec Vision Lab sur votre ordinateur, sans passer par Internet.</p>
+
+  <h2>4. Microphone (dictée)</h2>
+  <p>La dictée ne s'active que lorsque vous cliquez sur le bouton micro, après l'autorisation de Windows. L'audio est transcrit <b>sur votre ordinateur</b> ; le fichier audio temporaire est supprimé juste après. Aucun enregistrement n'est envoyé sur Internet.</p>
+
+  <h2>5. Services externes que vous pouvez utiliser</h2>
+  <table>
+    <tr><th>Service</th><th>Données envoyées</th><th>Quand</th></tr>
+    <tr><td>Google Gemini, OpenAI, Anthropic (Claude)</td><td>Le contenu de votre demande : texte, extraits de documents ou images que vous choisissez d'inclure</td><td>Seulement si vous avez ajouté votre clé, autorisé ce fournisseur et lancé une action ; usage facturé sur votre compte chez ce fournisseur</td></tr>
+    <tr><td>Wikimedia Commons, Openverse</td><td>Vos mots de recherche</td><td>Recherche de références en ligne</td></tr>
+    <tr><td>Unsplash, Pexels</td><td>Vos mots de recherche. Les images Unsplash sont affichées depuis les serveurs d'Unsplash, qui enregistre ces affichages selon ses conditions</td><td>Seulement si vous avez configuré ces services</td></tr>
+    <tr><td>Pinterest</td><td>Voir la section 6</td><td>Seulement si vous connectez votre compte</td></tr>
+    <tr><td>Huemint</td><td>Les couleurs d'une palette à compléter</td><td>Quand vous demandez une suggestion de palette</td></tr>
+    <tr><td>Hugging Face</td><td>Une demande de téléchargement d'un modèle de recherche visuelle (aucune donnée personnelle)</td><td>Une seule fois, si vous installez ce module</td></tr>
+    <tr><td>Sites web ouverts dans le navigateur intégré</td><td>Ce qu'un navigateur envoie habituellement aux sites consultés</td><td>Quand vous ouvrez une page</td></tr>
+  </table>
+  <p>Les images et informations obtenues d'une banque d'images (auteur, licence, lien vers l'original) sont affichées dans l'application ; une image n'est enregistrée dans votre projet que si vous l'importez, lorsque la licence du fournisseur le permet. Les traitements d'IA exécutés sur votre ordinateur n'envoient rien sur Internet.</p>
+
+  <h2 id="pinterest">6. Pinterest</h2>
+  <p>La connexion à Pinterest est facultative et passe par l'autorisation officielle de Pinterest (OAuth 2.0). Vision Lab demande uniquement des accès en lecture : <code>boards:read</code>, <code>pins:read</code> et <code>user_accounts:read</code>.</p>
+  <ul>
+    <li><b>Données lues</b> : le nom de votre compte, vos tableaux, les épingles de vos tableaux et le résultat d'une recherche parmi vos épingles, au moment où vous les consultez.</li>
+    <li><b>Données conservées</b> : uniquement le jeton d'accès délivré par Pinterest, chiffré sur votre ordinateur. Les épingles et leurs informations ne sont ni enregistrées sur disque, ni copiées dans vos projets ; les miniatures ne restent en mémoire que pendant que l'application est ouverte.</li>
+    <li><b>Ce que Vision Lab ne fait pas</b> : rien n'est publié, modifié ou supprimé sur votre compte ; aucune donnée Pinterest n'est transmise à l'éditeur ou à un tiers, combinée à d'autres sources, utilisée pour entraîner un modèle d'intelligence artificielle ou à des fins publicitaires.</li>
+    <li><b>Retirer l'accès</b> : « Déconnecter » dans Vision Lab (supprime le jeton) et, sur Pinterest, dans les paramètres de votre compte.</li>
+  </ul>
+
+  <h2>7. Bases légales et durées</h2>
+  <p>Les échanges avec un service externe reposent sur votre demande (exécution de la fonction que vous utilisez) et, pour la connexion d'un compte, sur votre consentement, que vous pouvez retirer à tout moment. Les données stockées sur votre ordinateur y restent jusqu'à ce que vous les supprimiez ; le jeton Pinterest est supprimé dès la déconnexion.</p>
+
+  <h2>8. Vos droits</h2>
+  <p>Vous disposez des droits d'accès, de rectification, d'effacement, d'opposition, de limitation et de portabilité prévus par le RGPD. Vos données locales sont directement sous votre contrôle ; pour les données traitées par un service externe, adressez-vous à ce service. Contact : <a href="mailto:fasecreativesuite@gmail.com">fasecreativesuite@gmail.com</a>. Vous pouvez aussi saisir la CNIL (<a href="https://www.cnil.fr">www.cnil.fr</a>).</p>
+
+  <h2>9. Ce site</h2>
+  <p>Ce site n'utilise ni cookie, ni mesure d'audience, ni police ou script externe. Il est hébergé par GitHub Pages (GitHub, Inc.), qui peut enregistrer des journaux techniques, comme l'adresse IP, pour assurer le service.</p>
+
+  <h2>10. Modifications</h2>
+  <p>Cette politique est mise à jour lorsque les traitements de l'application changent ; la date en haut de page indique la dernière version.</p>
+</article></main>
+
+<footer class="foot"><div class="wrap">
+  <span>© 2026 FASE · FASE Vision Lab</span>
+  <nav><a href="../">Accueil</a><a href="./">Vision Lab</a><a href="../mentions-legales.html">Mentions légales</a></nav>
+</div></footer>
+</body>
+</html>
